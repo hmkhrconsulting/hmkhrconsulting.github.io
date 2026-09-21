@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HMK HR Consulting - Practical HR solutions for growing businesses. Recruitment, HR policies, HR systems, employee documentation, performance management and HR advisory.">
+  <meta name="theme-color" content="#123B5D">
+  <title>HMK HR Consulting | Where Strong Teams Are Built</title>
+  <style>
+    :root{
+      --navy:#123B5D;
+      --teal:#0E8A86;
+      --gold:#D7A83E;
+      --ink:#173042;
+      --muted:#607381;
+      --bg:#F5F8FA;
+      --white:#ffffff;
+      --line:#DCE6EB;
+      --shadow:0 12px 35px rgba(18,59,93,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1080px,92%);margin:auto}
+    header{
+      background:linear-gradient(135deg,var(--navy),#1b5878);
+      color:var(--white);
+      padding:72px 0 62px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    header:after{
+      content:"";
+      position:absolute;
+      width:280px;height:280px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:50%;
+      right:-100px;top:-120px;
+    }
+    .brand{
+      font-size:clamp(2rem,7vw,3.5rem);
+      font-weight:800;
+      letter-spacing:-1px;
+      margin:0;
+    }
+    .tagline{
+      color:#F2D58A;
+      font-size:1.05rem;
+      font-weight:700;
+      margin:8px 0 18px;
+    }
+    .hero-text{
+      max-width:680px;
+      margin:0 auto 28px;
+      color:#EAF3F7;
+      font-size:1.05rem;
+    }
+    .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:12px 20px;
+      border-radius:999px;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .btn-primary{background:var(--gold);color:#182B36}
+    .btn-secondary{border:1px solid rgba(255,255,255,.55);color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+    section{padding:62px 0}
+    .section-title{text-align:center;margin:0 0 10px;font-size:2rem;color:var(--navy)}
+    .section-lead{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 34px}
+    .services{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .card{
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:25px;
+      box-shadow:var(--shadow);
+    }
+    .icon{
+      width:46px;height:46px;border-radius:12px;
+      background:#E8F5F4;color:var(--teal);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;font-size:1.15rem;margin-bottom:15px;
+    }
+    .card h3{margin:0 0 7px;color:var(--navy);font-size:1.1rem}
+    .card p{margin:0;color:var(--muted);font-size:.95rem}
+    .about{
+      background:#EAF3F7;
+    }
+    .about-box{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:30px;
+      align-items:center;
+    }
+    .about-copy h2{margin:0 0 12px;color:var(--navy);font-size:2rem}
+    .about-copy p{color:var(--muted);margin:0 0 12px}
+    .points{display:grid;gap:12px}
+    .point{
+      background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;
+    }
+    .point strong{color:var(--navy)}
+    .contact{
+      background:var(--navy);
+      color:#fff;
+    }
+    .contact .section-title{color:#fff}
+    .contact .section-lead{color:#D8E8EF}
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+    }
+    .contact-item{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:16px;
+      padding:20px;
+      text-align:center;
+    }
+    .contact-item small{display:block;color:#BFD4DE;margin-bottom:5px}
+    .contact-item a{font-weight:700;color:#fff;word-break:break-word}
+    footer{
+      background:#0C2D45;color:#BFD4DE;text-align:center;
+      padding:22px 15px;font-size:.9rem;
+    }
+    @media(max-width:800px){
+      .services{grid-template-columns:repeat(2,1fr)}
+      .about-box{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){
+      header{padding:58px 0 50px}
+      section{padding:48px 0}
+      .services{grid-template-columns:1fr}
+      .card{padding:21px}
+      .section-title{font-size:1.7rem}
+      .brand{font-size:2.25rem}
+      .btn{width:100%}
+      .btns{width:100%}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="brand">HMK HR Consulting</h1>
+    <div class="tagline">Where Strong Teams Are Built.</div>
+    <p class="hero-text">
+      Practical HR solutions for growing businesses — from recruitment and HR systems
+      to policies, documentation and performance management.
+    </p>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://wa.me/923335012411?text=Hello%20HMK%20HR%20Consulting%2C%20I%20would%20like%20to%20discuss%20my%20HR%20requirements." target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/company/hmk-hr-consulting" target="_blank" rel="noopener">Visit LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Our HR Services</h2>
+    <p class="section-lead">Focused, practical support to help businesses build structured HR practices and stronger teams.</p>
+
+    <div class="services">
+      <article class="card">
+        <div class="icon">01</div>
+        <h3>Recruitment & Talent Acquisition</h3>
+        <p>Support with sourcing, screening and hiring the right talent for your organization.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">02</div>
+        <h3>HR Policies & SOPs</h3>
+        <p>Clear and practical HR policies and standard operating procedures for your workplace.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">03</div>
+        <h3>HR Systems & Processes</h3>
+        <p>Structured HR workflows and processes to improve consistency and efficiency.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">04</div>
+        <h3>Employee Documentation</h3>
+        <p>Professional contracts, letters, employee records and essential HR documentation.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">05</div>
+        <h3>Performance Management</h3>
+        <p>Support for KPIs, appraisals, performance reviews and employee development.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">06</div>
+        <h3>HR Advisory & Consultancy</h3>
+        <p>Practical HR guidance tailored to your organization's needs and stage of growth.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container about-box">
+    <div class="about-copy">
+      <h2>Build a Stronger HR Foundation</h2>
+      <p>
+        HMK HR Consulting helps businesses establish practical HR systems,
+        hire effectively and create structured workplace practices.
+      </p>
+      <p>
+        Whether you are building your HR function from the beginning or improving
+        an existing process, we provide solutions designed around your business needs.
+      </p>
+    </div>
+
+    <div class="points">
+      <div class="point"><strong>Practical Solutions</strong><br>Simple, usable HR processes designed for real workplaces.</div>
+      <div class="point"><strong>Business-Focused</strong><br>HR support aligned with your organization's operational needs.</div>
+      <div class="point"><strong>Professional Approach</strong><br>Structured documentation, processes and HR practices.</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-lead">Have an HR requirement? Start a conversation with HMK HR Consulting.</p>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <small>WhatsApp / Phone</small>
+        <a href="https://wa.me/923335012411" target="_blank" rel="noopener">+92 333 5012411</a>
+      </div>
+
+      <div class="contact-item">
+        <small>Email</small>
+        <a href="mailto:hmkhrconsulting@gmail.com">hmkhrconsulting@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <small>LinkedIn</small>
+        <a href="https://www.linkedin.com/company/hmk-hr-consulting" target="_blank" rel="noopener">HMK HR Consulting</a>
+      </div>
+    </div>
+
+    <div class="btns" style="margin-top:30px">
+      <a class="btn btn-primary" href="https://wa.me/923335012411?text=Hello%20HMK%20HR%20Consulting%2C%20I%20would%20like%20to%20discuss%20my%20HR%20requirements." target="_blank" rel="noopener">Start a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 HMK HR Consulting · Islamabad, Pakistan · Where Strong Teams Are Built.
+</footer>
+
+</body>
+</html>
